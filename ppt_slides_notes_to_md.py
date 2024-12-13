@@ -4,16 +4,17 @@ from pptx import Presentation
 import comtypes.client
 import os
 
-file = 'C:/Users/Heena/anaconda3/envs/ppt2md/FEMAR_A3_2_1_CM_General.pptx'
+file = 'C:/Users/Heena/anaconda3/envs/ppt2md/FEMAR_A3_2_1_CM_General.pptx' #Name and Location of the File
 
 ppt = Presentation(file)
 
 # List to hold notes
 notes = []
-image_dir = 'C:/Users/Heena/Desktop/Masters TUD/WHK/Slides_as_images/FEMAR_A3_2_1_CM_General'
+image_dir = 'C:/Users/Heena/Desktop/Masters TUD/WHK/Slides_as_images/FEMAR_A3_2_1_CM_General' #Name and Location of the folder where the slides are saved in .jpg format
 
 # Extract notes from each slide
 for page, slide in enumerate(ppt.slides):
+   
     # Get the presenter notes
     textNote = slide.notes_slide.notes_text_frame.text
     notes.append((page + 1, textNote))  # Use page + 1 for 1-based indexing
