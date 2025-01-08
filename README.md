@@ -1,4 +1,4 @@
-# 🎈 Blank app template: https://slides-app.streamlit.app/ Slides App
+# 🎈 App template: https://slides-app.streamlit.app/ Slides App
 
 A simple Streamlit app template for you to modify!
 
